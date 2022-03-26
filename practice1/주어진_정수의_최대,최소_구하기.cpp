@@ -1,10 +1,9 @@
 #include <iostream>
-#include <climits>
 using namespace std;
 
 int main()
 {
-    int t, n, max = INT_MIN, min = INT_MAX, num;
+    int t, n, max, min, num;
 
     cin >> t;
     for (int i = 0; i < t; i++)
@@ -13,6 +12,11 @@ int main()
         for (int j = 0; j < n; j++)
         {
             cin >> num;
+            if (j == 0)
+            {
+                max = num;
+                min = num;
+            }
             if (max < num)
                 max = num;
             if (min > num)
