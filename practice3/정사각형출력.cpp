@@ -35,24 +35,7 @@ int main(void)
                 }
                 cout << endl;
             }
-            else if (j > 0 && j < n / 2)
-            {
-                for (int k = 0; k < n; k++)
-                {
-                    if (k == 0 || k == n / 2 || k == n - 1)
-                        cout << '|';
-                    else if (k == flag)
-                        cout << '\\';
-                    else if (k == flag2)
-                        cout << '/';
-                    else
-                        cout << '.';
-                }
-                flag++;
-                flag2--;
-                cout << endl;
-            }
-            else if (j > n / 2 && j < n - 1)
+            else
             {
                 for (int k = 0; k < n; k++)
                 {
