@@ -23,7 +23,7 @@ int main(void)
                 flag = 0;
             }
         }
-            
+
     }
 
     for (int i = 0; i < t; i++)
